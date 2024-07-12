@@ -1,0 +1,11 @@
+{
+  "name": "pathplanner",
+  "version": "1.0.0",
+  "description": "path planner to create and work with libstoga paths, visual aid and file generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prranit Arora, Asish Nakka",
+  "license": "ISC"
+}
