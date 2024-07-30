@@ -12,6 +12,10 @@ app.get('/', function (req, res) {
     res.render('homepg');
 });
 
+app.get('/mainmenu', function (req, res) {
+    res.render('mainmenu');
+});
+
 app.get('/maincppgen', function (req, res) {
     res.render('maincppgen');
 });
