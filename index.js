@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path')
 
 const checkPort = (port, callback) => {
   const app = express();
@@ -44,6 +45,11 @@ const startServer = (port) => {
 
   app.get('/settings', function (req, res) {
     res.render('settings');
+  });
+
+  app.get('/debug',function (req, res) {
+    const filePath = path.join(__dirname,'files','debugCommandtest.txt')
+    res.sendFile(filePath);
   });
 
   app.listen(port, () => {
